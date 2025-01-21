@@ -39,3 +39,13 @@ bash
    mv song1.mp3 song2.mp3 song3.mp3 friends
    mv snap1.jpg snap2.jpg snap3.jpg family
    mv film1.avi film2.avi film3.avi work
+
+---
+
+### Expected Output:
+
+1. The given six files will be created in our current directory.
+
+2. Three new directories will be created.
+
+3. The files will be moved into their respective subdirectories.
