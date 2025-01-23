@@ -49,3 +49,16 @@ bash
 2. Three new directories will be created.
 
 3. The files will be moved into their respective subdirectories.
+   
+---
+
+### Screenshots:
+
+![image](https://github.com/user-attachments/assets/59844fde-0e13-429d-b15f-c236206bc3df)
+
+![image](https://github.com/user-attachments/assets/8e31a1c9-87a1-4f35-9a71-f86af1a95297)
+
+![image](https://github.com/user-attachments/assets/ceee828e-48e4-4d5d-94ac-dd36860bed1d)
+
+![image](https://github.com/user-attachments/assets/f7378d5c-ec8d-478c-8e31-70a73df4e463)
+
