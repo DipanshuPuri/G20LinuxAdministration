@@ -38,3 +38,13 @@ In this lab, we will explore the `gedit` man page, find the appropriate command 
 2. The output of man -k ext4 will list relevant man pages related to ext4.
 
 3. The output of the brace expansion examples will be the expansion of the given patterns, such as file1.txt file2.txt file3.txt file4.txt file5.txt for the first example.
+
+---
+
+### Screenshots:
+
+![image](https://github.com/user-attachments/assets/444148b6-ac6c-4456-ba94-2a15ea813edc)
+
+![image](https://github.com/user-attachments/assets/fa484f4b-7ccf-4e6f-9648-5d210b0fe7e0)
+
+![image](https://github.com/user-attachments/assets/ba7de4dd-2524-491d-a13e-12125cf22c54)
