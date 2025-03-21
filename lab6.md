@@ -1,132 +1,61 @@
-# Lab Overview: Managing Processes and Software with `ps`, `top`, `kill`, and `apt-get` Commands
+# Lab Overview: Managing User Accounts in Linux
 
-In this lab, we will practice managing processes and software on a Linux system using the `ps`, `top`, `kill`, and `apt-get` commands. The objective is to understand how to monitor, control, and manage processes, as well as how to install, update, and remove software packages using the `apt-get` command.
+In this lab, we will practice creating and managing user accounts in a Linux environment. The objective is to create multiple users, set their passwords, update user comments, and remove a user from the system.
 
 ### Objective:
-1. **Monitor processes** using the `ps` and `top` commands.
-2. **Terminate processes** using the `kill` command.
-3. **Install, update, and remove software** using the `apt-get` command.
+1. Create the `operator1` user and confirm its existence.
+2. Set the password for `operator1`.
+3. Create additional users `operator2` and `operator3` and set their passwords.
+4. Update the comment for the `operator1` user account using the `usermod -c` command.
+5. Remove the `operator3` user from the system.
 
 ---
 
 ### Input Commands:
 
-To achieve the above objectives, we will use the following commands:
+To achieve the above objectives, we used the following commands:
 
-1. **Monitor processes**:
+1. **Create `operator1` user and set password**:
    
-   - **List all running processes**:
-     
-     ```bash
-     ps aux
-     ```
-   
-   - **Display real-time system processes**:
-     
-     ```bash
-     top
-     ```
+bash
+   sudo useradd operator1
+   sudo passwd operator1
 
-2. **Terminate processes**:
+2. **Create `operator2` and `operator3` users and set passwords**:
    
-   - **Find the Process ID (PID) of a specific process** (e.g., `firefox`):
-     
-     ```bash
-     pidof firefox
-     ```
-   
-   - **Terminate a process using its PID**:
-     
-     ```bash
-     kill <PID>
-     ```
-   
-   - **Forcefully terminate a process**:
-     
-     ```bash
-     kill -9 <PID>
-     ```
+bash
+   sudo useradd operator2
+   sudo passwd operator2
+   sudo useradd operator3
+   sudo passwd operator3
 
-3. **Install, update, and remove software**:
+3. **Update the comment for `operator1`**:
    
-   - **Update the package list**:
-     
-     ```bash
-     sudo apt-get update
-     ```
+bash
+   sudo usermod -c "Primary Operator" operator1
+
+4. **Remove `operator3` user**:
    
-   - **Upgrade installed packages**:
-     
-     ```bash
-     sudo apt-get upgrade
-     ```
-   
-   - **Install a software package** (e.g., `htop`):
-     
-     ```bash
-     sudo apt-get install htop
-     ```
-   
-   - **Remove a software package** (e.g., `htop`):
-     
-     ```bash
-     sudo apt-get remove htop
-     ```
-   
-   - **Remove a software package and its configuration files**:
-     
-     ```bash
-     sudo apt-get purge htop
-     ```
-   
-   - **Remove unused packages**:
-     
-     ```bash
-     sudo apt-get autoremove
-     ```
+bash
+   sudo userdel operator3
 
 ---
 
 ### Expected Output:
 
-1. **Monitor processes**:
-   - The `ps aux` command will display a list of all running processes.
-   - The `top` command will show real-time system processes, including CPU and memory usage.
-
-2. **Terminate processes**:
-   - The `pidof` command will return the PID of the specified process.
-   - The `kill` command will terminate the process with the given PID.
-   - The `kill -9` command will forcefully terminate the process.
-
-3. **Install, update, and remove software**:
-   - The `sudo apt-get update` command will update the package list.
-   - The `sudo apt-get upgrade` command will upgrade installed packages.
-   - The `sudo apt-get install` command will install the specified software package.
-   - The `sudo apt-get remove` command will remove the specified software package.
-   - The `sudo apt-get purge` command will remove the software package and its configuration files.
-   - The `sudo apt-get autoremove` command will remove unused packages.
+1. The `operator1`, `operator2`, and `operator3` users will be created.
+2. Passwords will be set for all three users.
+3. The comment for `operator1` will be updated to "Primary Operator".
+4. The `operator3` user will be removed from the system.
 
 ---
 
 ### Screenshots:
 
-1. **Output of `ps aux`**:
-   
-   ![image](https://github.com/user-attachments/assets/ps-aux-output.png)
+![image](https://github.com/user-attachments/assets/59844fde-0e13-429d-b15f-c236206bc3df)
 
-2. **Output of `top`**:
-   
-   ![image](https://github.com/user-attachments/assets/top-output.png)
+![image](https://github.com/user-attachments/assets/8e31a1c9-87a1-4f35-9a71-f86af1a95297)
 
-3. **Output of `apt-get` commands**:
-   
-   ![image](https://github.com/user-attachments/assets/apt-get-output.png)
+![image](https://github.com/user-attachments/assets/ceee828e-48e4-4d5d-94ac-dd36860bed1d)
 
----
-
-### Notes:
-- Ensure you have the necessary permissions to execute commands with `sudo`.
-- Be cautious when using the `kill` command, especially with the `-9` option, as it forcefully terminates processes.
-- Always double-check the package name before installing or removing software to avoid unintended actions.
-
-This lab provides a hands-on approach to managing processes and software on a Linux system, which are essential skills for system administrators and developers.
+![image](https://github.com/user-attachments/assets/f7378d5c-ec8d-478c-8e31-70a73df4e463)
