@@ -59,3 +59,15 @@ In this lab, we will practice creating directories, modifying file permissions, 
 3. Forbid others from accessing the /home/consultants directory.
 
 4. Change the default umask for operator1.
+
+---
+
+### Screenshots:
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
