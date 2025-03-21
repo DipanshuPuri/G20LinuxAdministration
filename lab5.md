@@ -48,3 +48,15 @@ The specified process will be terminated, and you will return to the command pro
 
 4. After running apt-get commands:
 Depending on the operation (install, update, or remove), you will see a series of messages confirming the action, such as downloading and installing packages, or removing them.
+
+---
+
+### Screenshots:
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
