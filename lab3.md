@@ -59,3 +59,14 @@ After performing the required operations
    opqr
    ```
    
+---
+
+### Screenshots:
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
+
+![image](https://github.com/user-attachments/assets/)
